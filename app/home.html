@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>home</title>
+
+    <link rel="stylesheet" href="home.css">
+    <script src="scripts/paho-mqtt.js"></script>
+    <script src="scripts/room_connect.js"></script>
+    <script src="scripts/home.js"></script>
+</head>
+
+<body>
+    <div data-layer="3f3cf4dc-085b-4b75-a74b-557e1b67cb4d" class="home"> <svg data-layer="ef73ae75-13ea-4e87-ab8d-68b6a4024e9c" preserveAspectRatio="none" viewBox="-0.75 -0.75 150.5 917.5" class="polygon1"><defs><pattern id="img-polygon1" patternContentUnits="userSpaceOnUse" width="100%" height="100%"><image xlink:href="assets/polygon1.png" x="0" y="0" width="164.00px" height="931.00px" /></pattern></defs><path d="M 81.99999237060547 0 L 164 931 L 0 931 Z" fill="url(#img-polygon1)" /></svg>
+        <div data-layer="3b8102fd-48fd-478d-9485-dd6397daa3aa" class="apptitle">Room Weather Monitoring</div>
+        <div data-layer="a386e95c-ca63-47d1-bfb7-57220b02cc8d" class="weatherVariables">Weather Variables</div>
+        <div data-layer="56eac614-fa49-4fac-bc32-6d48ec4f386c" class="deviceControls">Device Controls</div>
+        <div data-layer="a622213c-63d7-49ab-ad37-8e7dd32be676" class="temperatureindicator">
+            <div data-layer="c3c5dc78-8066-4985-8780-059ce42873b5" class="tempbg"></div>
+            <div data-layer="05091eaf-361c-41cb-9067-0ee86c995b2b" class="temperature" id="tmpVal">26</div>
+            <div data-layer="8fce96ca-9919-4ac4-b5bd-33f411e3abfb" class="c">°C</div>
+            <div data-layer="3d3afeb7-66e4-4a9b-a966-035990d3caaf" class="lbltemp">Temp.</div>
+        </div>
+        <div data-layer="84e0f910-a968-4827-b37d-699681d462b3" class="humidityindicator">
+            <div data-layer="47b5269b-22f6-4be9-81e4-6ddff3a8a67b" class="humbg"></div>
+            <div data-layer="920f1de2-6e5e-4d75-883d-3b86776b8878" class="humidity" id="humVal">78</div>
+            <div data-layer="632ee6c6-14eb-40b5-b90f-820b3c02054a" class="xc73e8534">%</div>
+            <div data-layer="7adc605b-66c6-4663-accf-e3af497041bc" class="lblhum">Hum.</div>
+        </div>
+        <div data-layer="73b17455-2409-46c3-9d7d-fb6a2a9fcf77" class="btnfan">
+            <div data-layer="95b85f3d-c0ca-4940-bb5a-ace2211d2301" class="fanbg"></div>
+            <div data-layer="d50e68e2-cd75-4763-85fd-d519847ad602" class="uifan"></div>
+            <div data-layer="f893b596-ee75-4c64-8742-2d0d465200e3"  class="on">
+                <img id="fanEl" onclick="toggleFan()" src="assets/on.png" width="100px" height="100px">
+            </div>
+        </div>
+        <div data-layer="44ceeaca-1a98-4288-a428-b6f4033176bb" class="btnheater">
+            <div data-layer="8016fdd8-545c-4eb3-a3e0-204e4c6e11cb" class="heaterbg"></div>
+            <div data-layer="45fe82ff-de6a-4566-9b3b-a110f7640a59" class="uiheater"></div>
+            <div data-layer="608409b3-27b4-4d37-b961-6dd49a34dc99" id="heaterEl" class="uioff">
+                <img id="heaterEl" onclick='toggleHeater()' src="assets/uioff.png" width="100px" height="100px">
+            </div>
+        </div>
+        <div data-layer="c660cd71-1add-4a59-b549-e73c8b237cf1" class="btncredit">
+            <div data-layer="67bc679f-1c83-4278-aceb-1b75bb41975e" class="rectangle3"></div>
+            <div onclick='window.location.href="credits.html"' data-layer="5a4026cf-9716-413f-a90c-92ae257da6ea" class="credits">Credits</div>
+        </div>
+    </div>
+
+<!--  -->
+<!-- 608409b3-27b4-4d37-b961-6dd49a34dc99 -->
+
+
+</body>
+
+</html>
